@@ -2,8 +2,6 @@
 #include <Windows.h>
 #include "main.h"
 
-int Akkerman(int, int);
-
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -22,6 +20,18 @@ int main() {
 				cin >> x >> y;
 
 				cout << "Akkerman: " << Akkerman(x, y) << endl;
+			} break;
+
+			case 2: {
+				const int size = 100;
+				char str[size];
+
+				cout << "02. Количество цифр." << endl;
+				cout << "Введите строку: ";
+				cin.ignore();
+				cin.getline(str, size);
+
+				cout << "Количество цифр в строке: " << numberCounter(str, strlen(str)) << endl;
 			} break;
 
 			case -1: cout << "Выход из программы.\n"; break;
