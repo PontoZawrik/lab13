@@ -2,6 +2,8 @@
 #include <Windows.h>
 #include "main.h"
 
+int Akkerman(int, int);
+
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -14,10 +16,16 @@ int main() {
 		cin >> p;
 
 		switch (p) {
+			case 1: {
+				int x, y;
+				cout << "Enter x, y: ";
+				cin >> x >> y;
 
+				cout << "Akkerman: " << Akkerman(x, y) << endl;
+			} break;
 
-		case -1: cout << "Выход из программы.\n"; break;
-		default: cout << "Неверный номер.\n";
+			case -1: cout << "Выход из программы.\n"; break;
+			default: cout << "Неверный номер.\n";
 		}
 
 		cout << endl;
