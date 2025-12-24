@@ -1,6 +1,7 @@
-#include "../../utils/utils/utils.h"
 #include <Windows.h>
 #include "main.h"
+//#include "../../utils/utils/utils.h"
+
 
 int main() {
 	SetConsoleCP(1251);
@@ -32,6 +33,18 @@ int main() {
 				cin.getline(str, size);
 
 				cout << "Количество цифр в строке: " << numberCounter(str, strlen(str)) << endl;
+			} break;
+
+			case 3: {
+				/*	unsigned size = 20;
+					double* array = createArray<double>(size);
+
+					for (unsigned i = 0; i < size; i++) {
+						array[i] = getRandomFloat(10, 99);
+					}
+					printArray(array, size);
+
+					cout << "" << maxR(array, 0, size) << endl;*/
 			} break;
 
 			case -1: cout << "Выход из программы.\n"; break;
