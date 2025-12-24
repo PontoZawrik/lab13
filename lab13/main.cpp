@@ -44,7 +44,8 @@ int main() {
 					}
 					printArray(array, size);
 
-					cout << "" << maxR(array, 0, size) << endl;
+					cout << "Максимальное число: " << maxR(array, 0, size) << endl;
+					delete[] array;
 			} break;
 
 			case -1: cout << "Выход из программы.\n"; break;
