@@ -1,6 +1,6 @@
 #include <Windows.h>
 #include "main.h"
-//#include "../../utils/utils/utils.h"
+#include "../../utils/utils/utils.h"
 
 
 int main() {
@@ -36,7 +36,7 @@ int main() {
 			} break;
 
 			case 3: {
-				/*	unsigned size = 20;
+					unsigned size = 20;
 					double* array = createArray<double>(size);
 
 					for (unsigned i = 0; i < size; i++) {
@@ -44,7 +44,7 @@ int main() {
 					}
 					printArray(array, size);
 
-					cout << "" << maxR(array, 0, size) << endl;*/
+					cout << "" << maxR(array, 0, size) << endl;
 			} break;
 
 			case -1: cout << "Выход из программы.\n"; break;
